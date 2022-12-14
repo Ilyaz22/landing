@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>landing/</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/stylesheet.css">
+  <script type="text/javascript" charset="utf-8" src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="parallax.js-1.5.0/parallax.min.js"></script>
 </head>
 <body>
 
@@ -17,59 +19,56 @@
   </ul>
 </header>
 
-<div class="container">
+<div class="video_bg container">
+  <div class="photo_main" data-parallax="scroll" data-image-src="./img/Фон.jpg"></div>
+  <div class="effects"></div>
+  <div class="block_1">
 
-  <div class="video_bg">
-
-    <video src="video/video_bg.mp4" type="video/mp4" autoplay muted loop></video>
-    <div class="block_1">
-
-      <div class="photo_text">
-        <img class="photo_1" src="./img/телескоп.png" alt="телескоп">
-        <h3>Excalibur</h3>
-      </div>
-
-      <div class="text_1">
-        <p>
-          Телескоп Excalibur создан специально для любителей. Он небольшой, легкий, простой в 
-          обращении. Вы легко определите спутники Юпитера (Ио, Европа, Калисто и Ганимед), сможете рассмотреть многие 
-          планеты Солнечной системы. Также этот телескоп оптимально подходит для исследования лунной поверхности 
-          (морей и кратеров)
-        </p>
-      </div>
-
+    <div class="photo_text">
+      <img class="photo_1" src="./img/телескоп.png" alt="телескоп">
+      <h3>Excalibur</h3>
     </div>
-  </div>
 
-  <div class="block_2" id="features">
-    <h1>Наши преимущества</h1>
-    <div class="section_features">
-      <div class="features">
-        <img class="photo_features" src="./img/Увеличение.png" alt="Увеличение">
-        <p><em>100 кратное оптическое увеличение</em></p>
-      </div>
-
-      <div class="features">
-        <img class="photo_features" src="./img/Цена.png" alt="Цена">
-        <p><em>Лучшее соотношению цена-качество</em></p>
-      </div>
-
-      <div class="features">
-        <img class="photo_features" src="./img/Камера.png" alt="Камера">
-        <p><em>Поддержка записи видео</em></p>
-      </div>
+    <div class="text_1">
+      <p>
+        Лучший астрономический телескоп для начинающих астрономов по самой низкой цене от немецкого производителя 
+      </p>
     </div>
 
   </div>
+</div>
 
-  <div class="block_3" id="review">
+<div class="background_2" >
+  <div class="block_2 container" id="features">
+      <h1>Уникальные особенности</h1>
+      <div class="section_features">
+        <div class="features">
+          <img class="photo_features" src="./img/Увеличение.png" alt="Увеличение">
+          <p><em>100 кратное оптическое увеличение</em></p>
+        </div>
+
+        <div class="features">
+          <img class="photo_features" src="./img/Цена.png" alt="Цена">
+          <p><em>Лучшее соотношение цена-качество</em></p>
+        </div>
+
+        <div class="features">
+          <img class="photo_features" src="./img/Камера.png" alt="Камера">
+          <p><em>Поддержка записи видео</em></p>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="background_3">
+  <div class="block_3 container" id="review">
     <h1>Отзывы</h1>
     <div class="section_review">
       <img class="photo_review" src="./img/Стетхем.jpg" alt="Стетхем">
       <p>
         Хороший телескоп. Очень ждали ясную погоду, чтобы насладиться всеми прелестями звездного неба и это получилось. 
         Смотрели на самолет в небе - увидели не только его цвет, но и полосы по краям самолета, было ощущение что он 
-        находится совсем близко
+        находится совсем близко.
       </p>
     </div>
 
@@ -89,24 +88,17 @@
       </p>
     </div>
   </div>
+</div>
 
-  <div class="block_4" id="order">
+<div class="background_4">
+  <div class="block_4 container" id="order">
     <h1>Форма заказа</h1>
-    <p><b>Ваше имя</b><br>
-      <input type="text" name="nick">
-    </p>
-
-    <p><b>Ваш E-mail</b><br>
-      <input type="text" name="E-mail">
-    </p>
-
-    <p><b>Ваш телефон</b><br>
-      <input type="text" name="telephone">
-    </p>
-
+    <input type="text" name="nick" placeholder="Ваше имя"><br>
+    <input type="text" name="E-mail" placeholder="Ваш E-mail"><br>
+    <input type="text" name="telephone" placeholder="Ваш телефон"><br>
     <button>Отправить</button>
   </div>
-
 </div>
+
 </body>
 </html>
