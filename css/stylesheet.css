@@ -249,19 +249,11 @@ button:hover {
   }
 }
 
-
-
-
 @media (max-width: 600px) {
   header ul li {
     margin-left: 0.2rem;
     margin-right: 0.2rem;
-    font-size: 1rem;
-  }
-
-  .li_3 {
-    display: block;
-    margin-top: 0.6rem;
+    font-size: 1.4rem;
   }
 
   .block_1 {
